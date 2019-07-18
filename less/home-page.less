@@ -1,10 +1,21 @@
 .home {
 
+  header {
+    padding-bottom: 20px;
+    border-bottom: 2px dashed @navigation-border;
+    
+    .head-img {
+      border-top: 2px dashed @navigation-border;
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+   
 
    
     
@@ -45,6 +56,9 @@
     img {
       border-radius: 10px;
     }
+
+    
+
   }
 
   .content-pick {
@@ -56,6 +70,19 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      // display: flex;
+      // flex-wrap: wrap;
+     
+
+      .btn{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        button {
+          .dest-button(@button-bg, white);
+          
+      }
+    }
     }
   }
 }// home
