@@ -179,6 +179,12 @@ nav {
     align-items: center;
   }
 }
+@media (max-width: 800px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 nav h1 {
   justify-content: flex-start;
   padding: 3% 3% 3% 0;
@@ -187,6 +193,11 @@ nav h1 {
 @media (max-width: 500px) {
   nav h1 {
     width: 40%;
+  }
+}
+@media (max-width: 800px) {
+  nav h1 {
+    justify-content: flex-start;
   }
 }
 nav .links {
@@ -325,6 +336,10 @@ nav .links a {
   width: 100%;
   justify-content: center;
 }
+.home .content-pick .destination .btn:hover {
+  transition: transform 1s;
+  transform: rotate(360deg);
+}
 .home .content-pick .destination .btn button {
   background: #17A2B8;
   color: white;
@@ -332,4 +347,7 @@ nav .links a {
   width: 75%;
   height: 40px;
   border: none;
+}
+.home .content-pick .destination .btn button:hover {
+  transform: rotate(360deg);
 }

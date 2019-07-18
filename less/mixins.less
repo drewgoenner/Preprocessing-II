@@ -1,6 +1,9 @@
 // Mixins in here
 
-
+.button-spin (@deg, @time) {
+    transform: rotate(@deg);
+    transition: transform @time;
+}
 
 .dest-button (@btnback, @btnfont ){
     background: @btnback;
