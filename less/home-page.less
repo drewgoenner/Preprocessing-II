@@ -33,7 +33,7 @@
     .text-content {
       @media @mobile {
         width: 100%;
-        padd: 0;
+        padding: 0;
       }
       width: 48%;
       padding-right: 1%;
@@ -109,17 +109,26 @@
      
 
       .btn{
-        .button-spin (360, 5);
+        // &:hover {
+        // .button-spin (360, 5);
+        // }
         
         display: flex;
         width: 100%;
         justify-content: center;
       
-            
-          .dest-button(@button-bg, white);
+            button {
+              &:hover {
+                .spinny(360deg, 3s);
+              }
+              
+              .dest-button(@button-bg, white);
+              
+            }
+        
           
       }
     }
-    }
   }
+  
 }// home

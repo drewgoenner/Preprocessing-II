@@ -262,7 +262,7 @@ nav .links a {
 @media (max-width: 500px) {
   .home .content-section .text-content {
     width: 100%;
-    padd: 0;
+    padding: 0;
   }
 }
 .home .content-section .img-content {
@@ -336,10 +336,6 @@ nav .links a {
   width: 100%;
   justify-content: center;
 }
-.home .content-pick .destination .btn:hover {
-  transition: transform 1s;
-  transform: rotate(360deg);
-}
 .home .content-pick .destination .btn button {
   background: #17A2B8;
   color: white;
@@ -350,4 +346,5 @@ nav .links a {
 }
 .home .content-pick .destination .btn button:hover {
   transform: rotate(360deg);
+  transition: transform 3s;
 }
