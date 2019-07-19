@@ -1,1 +1,16 @@
 // Mixins in here
+
+.spinny (@deg, @time) {
+    transform: rotate(@deg);
+    transition: transform @time;
+}
+
+.dest-button (@btnback: @button-bg, @btnfont: white, @width: 75%, @height: 40px) {
+    background: @btnback;
+    color: @btnfont;
+    border-radius: 12.5px;
+    width: @width;
+    height: @height;
+    border: none; 
+    font-size: 2rem;   
+}

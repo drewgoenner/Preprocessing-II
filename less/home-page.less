@@ -1,19 +1,50 @@
 .home {
+  width: 100%;
+
+  
+
+  header {
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+    }
+    padding-top: 12%;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed @navigation-border;
+    
+    .head-img {
+      border-top: 2px dashed @navigation-border;
+    }
+  }
 
   .content-section {
     margin: 30px 0;
     display: flex;
+    @media @mobile {
+      // display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     flex-wrap: wrap;
     justify-content: space-between;
 
    
+
+   
     
     .text-content {
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+      }
       width: 48%;
       padding-right: 1%;
     }
 
     .img-content {
+      @media @mobile {
+        width: 100%;
+      }
       width: 48%;
       padding-left: 1%;
 
@@ -24,6 +55,10 @@
   }
 
   .inverse-content {
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+    }
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
@@ -39,12 +74,18 @@
   }
 
   .content-destination {
+    @media @mobile {
+      width: 100%;
+    }
     width: 75%;
     margin: 0 auto 30px;
 
     img {
       border-radius: 10px;
     }
+
+    
+
   }
 
   .content-pick {
@@ -52,10 +93,44 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      flex-direction: column;
+      align-self: center;
+      justify-content: center;
+      width: 100%;
+    }
 
     .destination {
+      @media @mobile {
+        width: 80%;
+        align-self: center;
+      }
       width: 30%;
       margin-bottom: 30px;
+
+     
+
+      .btn{
+        // &:hover {
+        // .button-spin (360, 5);
+        // }
+        
+        display: flex;
+        width: 100%;
+        justify-content: center;
+      
+            button {
+              &:hover {
+                .spinny(360deg, 3s);
+              }
+              
+              .dest-button();
+              
+            }
+        
+          
+      }
     }
   }
+  
 }// home
