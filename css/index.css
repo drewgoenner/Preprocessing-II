@@ -169,6 +169,11 @@ img {
   margin: 0 auto;
 }
 nav {
+  position: fixed;
+  background: #17A2B8;
+  max-width: 800px;
+  width: 100%;
+  opacity: 0.8;
   display: flex;
   justify-content: space-between;
 }
@@ -177,17 +182,19 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 }
 @media (max-width: 800px) {
   nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }
 }
 nav h1 {
   padding: 3% 3% 3% 0;
-  width: 30%;
+  width: 50%;
 }
 @media (max-width: 500px) {
   nav h1 {
@@ -234,7 +241,11 @@ nav .links a {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home {
+  width: 100%;
+}
 .home header {
+  padding-top: 12%;
   padding-bottom: 20px;
   border-bottom: 2px dashed #C0C0C0;
 }
